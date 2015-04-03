@@ -31,6 +31,7 @@ function testimonialShortcode($atts, $content = null)
 	
 		$testimonial_title = get_option('testimonial_title');
 		$testimonial_content = get_option('testimonial_content');
+		$testimonial_content = stripslashes ( $testimonial_content );
 	
 		
 	    	$html .='<section class="exp-section">';

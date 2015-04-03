@@ -314,6 +314,7 @@ if ( ! class_exists( 'Testimonial_Post_Type' ) ) :
 						 	<?php
 						 	$check_testimonial_content = get_option('testimonial_content');
 						 	$testimonial_content = !empty($check_testimonial_content) ? $check_testimonial_content : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.';
+						 	$testimonial_content = stripslashes ( $testimonial_content );
 						 	?>
 						 		<th><?php _e('Content :', 'wpt'); ?><br/>
 						 			<i><?php _e('(Specify the content to be displayed)','wpt'); ?></i>
